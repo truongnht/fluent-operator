@@ -6,6 +6,7 @@ metadata:
   labels:
     app.kubernetes.io/name: fluent-bit
 spec:
+  # renovate: datasource=docker depName=ghcr.io/fluent/fluent-operator/fluent-bit
   image: ghcr.io/fluent/fluent-operator/fluent-bit:3.2.9
   positionDB:
     hostPath:
@@ -24,10 +25,10 @@ spec:
     nodeAffinity:
       requiredDuringSchedulingIgnoredDuringExecution:
         nodeSelectorTerms:
-        - matchExpressions:
-          - key: node-role.kubernetes.io/edge
-            operator: Exists
-  hostNetwork : true
+          - matchExpressions:
+              - key: node-role.kubernetes.io/edge
+                operator: Exists
+  hostNetwork: true
   volumes:
     - name: host-proc
       hostPath:
