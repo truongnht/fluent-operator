@@ -2,7 +2,7 @@ module github.com/fluent/fluent-operator/v3
 
 go 1.22.0
 
-toolchain go1.22.5
+toolchain go1.24.1
 
 require (
 	github.com/fsnotify/fsnotify v1.8.0
