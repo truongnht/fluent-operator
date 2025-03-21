@@ -14,7 +14,7 @@ env:
 
 jobs:
   renovate:
-    runs-on: [self-hosted, linux, x64, philips-code-hub, ubuntu-latest]
+    runs-on: [self-hosted, linux, x64]
 
     permissions:
       contents: write

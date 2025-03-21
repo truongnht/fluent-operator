@@ -14,7 +14,6 @@ module.exports = {
   gitAuthor: "Renovate Bot <bot@renovateapp.com>",
   onboarding: false,
   platform: "github",
-  forkProcessing: "disabled",
   dryRun: null,
   repositories: ["truongnht/fluent-operator"],
   enabledManagers: ["custom.regex"],
