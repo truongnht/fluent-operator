@@ -5,7 +5,8 @@ metadata:
   labels:
     app: fluent-bit
 spec:
-  image: ghcr.io/fluent/fluent-operator/fluent-bit:3.2.9
+  # renovate: datasource=docker depName=ghcr.io/fluent/fluent-operator/fluent-bit
+  image: ghcr.io/fluent/fluent-operator/fluent-bit:3.2.5
   imagePullPolicy: IfNotPresent
   positionDB:
     hostPath:
